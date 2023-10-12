@@ -12,7 +12,9 @@ do {
    }else{
        alert('one or both entries is invalid.')
    }
-   again=prompt('run application again? (y/n)', 'y')//, 'y' :this default the prompt to be "y"
+   do {
+    again=prompt('run application again? (y/n)', 'y').toLowerCase()
+}while(again!=='y' && again!=='n')//add code to validate the "again" entry. I
 }while(again==='y')
 
 console.log('the program has been terminated.')//enter "n", it terminate the loop.
